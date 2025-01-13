@@ -8,3 +8,10 @@ https://www.hostinger.fr/tutoriels/nano
 
 Variable d'environnments 
 https://doc.ubuntu-fr.org/variables_d_environnement
+
+PWD = montre utilisateur , emplacement 
+PATH = montrer / changer le repertoire 
+
+Variables Locales : 
+https://abs.traduc.org/abs-fr/ch24s02.html#:~:text=Que%20fait%20une%20variable%20locale%20%3F&text=Une%20variable%20d%C3%A9clar%C3%A9e%20localement%20n,du%20bloc%20de%20la%20fonction.
+
