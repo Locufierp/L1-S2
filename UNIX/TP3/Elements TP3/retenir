@@ -1,0 +1,3 @@
+o22305935@campus.univ-orleans.fr@OR-ST-IAES4-L19:~/TP3$ echo $((RANDOM % 101 ))
+29
+o22305935@campus.univ-orleans.fr@OR-ST-IAES4-L19:~/TP3$ echo $((RANDOM % 101 + 201))
