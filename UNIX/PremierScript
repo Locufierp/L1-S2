@@ -1,0 +1,3 @@
+echo "Hello World!" > monFichier
+echo "Le fichier mon Fichier a ete cree"
+echo "Vous pouvez voir son contenu par la commande: cat monFichier"
