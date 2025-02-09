@@ -1,0 +1,4 @@
+echo "Home = $HOME"
+echo "User = $USER"
+echo "Shell = $SHELL"
+echo "Pwd = $PWD"

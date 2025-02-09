@@ -1,0 +1,10 @@
+Gukesh;Dommaraju;2777
+Sindarov;Javokhir;2692
+Praggnanandhaa;Rameshbabu;2741
+Abdusattorov;Nodirbek;2768
+Keymer;Vincent;2733
+Firouzja;Alireza;2763
+Erigaisi;Arjun;2801
+Niemann;Hans Moke;2734
+Esipenko;Andrey;2699
+Deac;Bogdan-Daniel;2696
