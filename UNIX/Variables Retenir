@@ -3,6 +3,10 @@ Revoir caractères isolés :
 x 
 /?
 
+entre crochets : 
+[ a-r]
+[^a-r]
+
 Dans le terminal si bloqué :
   Ctrl-Z
 Dans le terminal : 
