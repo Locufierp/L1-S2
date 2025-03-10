@@ -1,43 +1,42 @@
 Dans le terminal si bloqué :
-Ctrl-Z
+  Ctrl-Z
 
 
 
 Actions :
-cp 
-mv
-bc = calculer des données 
+  cp 
+  mv
+  bc = calculer des données 
 
 
 Dossier :
-mkdir 
-rmdir
-rm -r
+  mkdir 
+  rmdir
+  rm -r
 
 
 
 
 Fichiers :
-nano 
-cat
-echo
+  nano 
+  cat
+  echo
 
 Parcourir / Analyser : 
-hexdump = Afficher le contenu d’un fichier en hexadécimal, décimal, octal ou ASCII.
-scale
-head
-tail
-ls 
-ls -l
-tr = Convertir, compresser ou éliminer des caractères de l'entrée standard en
-écrivant sur la sortie standard.
-grep = Usage : grep [OPTION]... MOTIFS [FICHIER]...
-Chercher des MOTIFS dans chaque FICHIER.
-Exemple : grep -i 'Bonjour, le monde' menu.h main.c
+  hexdump = Afficher le contenu d’un fichier en hexadécimal, décimal, octal ou ASCII.
+  scale
+  head
+  tail
+  ls 
+  ls -l
+  tr = Convertir, compresser ou éliminer des caractères de l'entrée standard en
+  écrivant sur la sortie standard.
+  grep = Usage : grep [OPTION]... MOTIFS [FICHIER]...
+  Chercher des MOTIFS dans chaque FICHIER.
+  Exemple : grep -i 'Bonjour, le monde' menu.h main.c
 
 Exemples TP :
-
-grep -E "^toto|^tata" monFichier.txt
-Remarque 1 : l’accent circonflexe signifie "commence par", la barre verticale signifie encore "OU"
+  grep -E "^toto|^tata" monFichier.txt
+  Remarque 1 : l’accent circonflexe signifie "commence par", la barre verticale signifie encore "OU"
 
 
