@@ -35,4 +35,9 @@ grep = Usage : grep [OPTION]... MOTIFS [FICHIER]...
 Chercher des MOTIFS dans chaque FICHIER.
 Exemple : grep -i 'Bonjour, le monde' menu.h main.c
 
+Exemples TP :
+
+grep -E "^toto|^tata" monFichier.txt
+Remarque 1 : l’accent circonflexe signifie "commence par", la barre verticale signifie encore "OU"
+
 
