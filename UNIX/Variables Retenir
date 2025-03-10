@@ -29,5 +29,7 @@ head
 tail
 ls 
 ls -l
-tr -d
+tr = Convertir, compresser ou éliminer des caractères de l'entrée standard en
+écrivant sur la sortie standard.
+
 
