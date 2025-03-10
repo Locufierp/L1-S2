@@ -32,6 +32,11 @@ Fichiers :
   cat
   echo
 
+  sort = Utilisation : sort [OPTION]... [FICHIER]...
+  ou : sort [OPTION]... --files0-from=F
+  Afficher la concaténation triée de tous les FICHIERs sur la sortie standard.
+  Sans FICHIER ou quand FICHIER est -, lire l'entrée standard.
+
   uniq = Utilisation : uniq [OPTION]... [ENTRÉE [SORTIE]]
   Filtrer les lignes adjacentes correspondantes depuis ENTRÉE (ou l'entrée
   standard), en écrivant dans SORTIE (ou la sortie standard).
@@ -53,8 +58,6 @@ Parcourir / Analyser :
   grep = Usage : grep [OPTION]... MOTIFS [FICHIER]...
   Chercher des MOTIFS dans chaque FICHIER.
   Exemple : grep -i 'Bonjour, le monde' menu.h main.c
-  
-  sort
 
 Exemples TP :
   grep -E "^toto|^tata" monFichier.txt
