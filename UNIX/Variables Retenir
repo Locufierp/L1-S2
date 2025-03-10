@@ -31,5 +31,8 @@ ls
 ls -l
 tr = Convertir, compresser ou éliminer des caractères de l'entrée standard en
 écrivant sur la sortie standard.
+grep = Usage : grep [OPTION]... MOTIFS [FICHIER]...
+Chercher des MOTIFS dans chaque FICHIER.
+Exemple : grep -i 'Bonjour, le monde' menu.h main.c
 
 
