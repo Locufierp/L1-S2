@@ -59,10 +59,20 @@ Parcourir / Analyser :
   Chercher des MOTIFS dans chaque FICHIER.
   Exemple : grep -i 'Bonjour, le monde' menu.h main.c
 
-  grep -E (expression particulière )
+  grep -E (expression régulière )
+
+  sed =
 
 Exemples TP :
   grep -E "^toto|^tata" monFichier.txt
   Remarque 1 : l’accent circonflexe signifie "commence par", la barre verticale signifie encore "OU"
+
+Questions : 
+
+diff entre grep et grep -E ?
+
+diff entre grep et sed ? 
+
+dans quel cas utilisez uniq ? 
 
 
