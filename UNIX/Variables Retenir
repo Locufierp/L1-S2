@@ -21,6 +21,12 @@ Tableaux :
 
 
 Fichiers :
+  touch = Utilisation : touch [OPTION]... FICHIER...
+  Mettre à jour la date d'accès et de modification de FICHIER à l'heure actuelle.
+  Un argument FICHIER n’existant pas est créé vide sauf si -c ou -h sont indiqués.
+  Une chaîne d'argument FICHIER à - est géré spécifiquement et fait que touch
+  modifie la date du fichier associé à la sortie standard.
+
   file =
   nano 
   cat
