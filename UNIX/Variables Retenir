@@ -1,3 +1,8 @@
+Dans le terminal si bloqué :
+Ctrl-Z
+
+
+
 Actions :
 cp 
 mv
@@ -15,5 +20,13 @@ rm -r
 Fichiers :
 nano 
 cat
+echo
 
 Parcourir / Analyser : 
+hexdump
+scale
+head
+tail
+ls 
+ls -l
+
