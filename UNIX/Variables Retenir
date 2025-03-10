@@ -22,7 +22,13 @@ Fichiers :
   nano 
   cat
   echo
-  uniq
+
+  uniq = Utilisation : uniq [OPTION]... [ENTRÉE [SORTIE]]
+  Filtrer les lignes adjacentes correspondantes depuis ENTRÉE (ou l'entrée
+  standard), en écrivant dans SORTIE (ou la sortie standard).
+  Sans option, les lignes correspondantes sont fusionnées sur la première
+  occurrence.
+
 
 Parcourir / Analyser : 
   hexdump = Afficher le contenu d’un fichier en hexadécimal, décimal, octal ou ASCII.
@@ -31,11 +37,14 @@ Parcourir / Analyser :
   tail
   ls 
   ls -l
+
   tr = Convertir, compresser ou éliminer des caractères de l'entrée standard en
   écrivant sur la sortie standard.
+
   grep = Usage : grep [OPTION]... MOTIFS [FICHIER]...
   Chercher des MOTIFS dans chaque FICHIER.
   Exemple : grep -i 'Bonjour, le monde' menu.h main.c
+  
   sort
 
 Exemples TP :
