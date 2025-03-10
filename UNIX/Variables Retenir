@@ -23,7 +23,7 @@ cat
 echo
 
 Parcourir / Analyser : 
-hexdump
+hexdump = Afficher le contenu d’un fichier en hexadécimal, décimal, octal ou ASCII.
 scale
 head
 tail
