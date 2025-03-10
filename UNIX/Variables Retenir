@@ -7,6 +7,10 @@ entre crochets :
 [ a-r]
 [^a-r]
 
+ATTENTION
+cela signifie que [a-z] correspond à [[:lower:]]
+⇒ Ne pas oublier les double-crochets.
+
 Dans le terminal si bloqué :
   Ctrl-Z
 Dans le terminal : 
