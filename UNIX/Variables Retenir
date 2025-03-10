@@ -21,6 +21,7 @@ Fichiers :
   nano 
   cat
   echo
+  uniq
 
 Parcourir / Analyser : 
   hexdump = Afficher le contenu d’un fichier en hexadécimal, décimal, octal ou ASCII.
@@ -34,6 +35,7 @@ Parcourir / Analyser :
   grep = Usage : grep [OPTION]... MOTIFS [FICHIER]...
   Chercher des MOTIFS dans chaque FICHIER.
   Exemple : grep -i 'Bonjour, le monde' menu.h main.c
+  sort
 
 Exemples TP :
   grep -E "^toto|^tata" monFichier.txt
