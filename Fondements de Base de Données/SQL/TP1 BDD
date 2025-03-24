@@ -1,0 +1,30 @@
+Dans le terminal : 
+\d =voirs sous tableaux
+\l= permet de voirs tous ses tableaux principaux
+\c= dans un tableau permet de rentrer dans d'autres tableaux de ce tableau
+
+voir tous dans son tableau fini : 
+select * from film
+
+voir tous son tableau salle plus tableau salle
+select * from film natural join salle : 
+
+
+Réponses TP1 : 
+
+Q1 :
+
+Q2:
+
+Q3: select acteur from film where titre='2001';
+
+Q4: select distinct nom from film natural join salle where acteur = 'matt damon';
+
+Q5: 
+1ere version :
+select acteur from film natural join produit where acteur = producteur ;
+
+2eme version : par produit cartésien " cross " 
+select acteur from film cross join produit where acteur = producteur ;
+
+Q6: 
