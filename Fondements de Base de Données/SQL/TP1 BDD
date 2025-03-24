@@ -30,4 +30,10 @@ select distinct acteur from film where acteur in ( select producteur from produi
 
 select acteur from film cross join produit where acteur = producteur ;
 
-Q6: 
+Q6: select distinct acteur from film.produit where acteur = producteur and film  
+
+Q7: select distinct acteur from film where réalisateur = 'george lucas' ;
+
+Q8: select * from film natural join produit where réalisateur = 'woody allen' ; 
+
+Q9: select distinct f2.acteur from film f1.produit,film F2 where f1 réalisateur  
