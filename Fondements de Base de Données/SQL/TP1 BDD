@@ -21,10 +21,13 @@ Q3: select acteur from film where titre='2001';
 Q4: select distinct nom from film natural join salle where acteur = 'matt damon';
 
 Q5: 
-1ere version :
-select acteur from film natural join produit where acteur = producteur ;
 
-2eme version : par produit cartésien " cross " 
+1ere version :
+
+select distinct acteur from film where acteur in ( select producteur from produit) ;
+
+2eme version : par produit cartésien " cross join " 
+
 select acteur from film cross join produit where acteur = producteur ;
 
 Q6: 
