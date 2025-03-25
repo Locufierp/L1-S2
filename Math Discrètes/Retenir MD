@@ -3,3 +3,7 @@ concat = concatener une liste a une autre
 voir notion de pattern matching 
 
 mettre en commentaire dans coq : 
+
+dans une liste : l 
+
+l' = élément suivant dans l 
