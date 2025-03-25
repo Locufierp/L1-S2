@@ -1,0 +1,154 @@
+Section Listes.
+(*On définit ici un type liste d'entiers et on prouve quelques propriétés.
+On utilisera le contenu  de cette section comme référence pour construire 
+un type mot dans un second temps.*)
+
+(*Définition du type.*)
+Inductive liste : Type :=
+| nil : liste
+| const : nat -> liste -> liste.
+
+(*Définition inductive de fonction avec pattern matching.*)
+Fixpoint concat (l1 l2 : liste) : liste :=
+match l1 with
+| nil => l2
+| const n l' => const n (concat l' l2)
+end.
+
+(*Définir une fonction maxliste qui renvoie le plus grand élément d'une liste ou 0
+ si la liste est vide. On pourra utiliser la fonction max définie sur le type nat.*)
+
+maxliste concat ( l1 l2 : liste ) : liste :=
+match l1
+(*Pour tester votre fonction.*)
+Definition n := maxliste (const 3 (const 4 (const 2 nil))).
+Compute n.
+
+(*Le lemme suivant montre que concaténer nil à gauche ne change pas la liste.*)
+Lemma leftconc_nil :
+ forall l : liste, l = concat nil l.
+Proof.
+  intros. split.
+Qed.
+
+(*Du côté droit, la preuve est plus riche et on fait utilise la définition 
+inductive de l avec la tactique induction.*)
+Lemma rightconc_nil :
+ forall l : liste, l = concat l nil.
+Proof.
+  intros. induction l. trivial. simpl. rewrite <- IHl. trivial.
+Qed.
+
+(*Écrire un théorème max_conc affirmant que le maximum d'une concaténation est le maximum 
+des concaténations, puis le prouver. On s'autorise le lemme suivant donnant 
+l'associativité de max qu'on pourra utiliser à l'aide de la tactique apply.*)
+Lemma max_assoc :
+  forall a b c : nat, max a (max b c) = max (max a b) c.
+Proof.
+Admitted.
+
+
+(*Écrire un théorème concat_assoc affirmant que la concaténation est associative puis 
+le prouver.*)
+
+
+(*Définir une fonction length calculant la longueur d'une liste.*)
+
+
+(*Écrire un théorème length_concat affirmant que la longueur d'une concaténation est la somme
+des longueurs, puis le prouver.*)
+
+
+
+Section Mots.
+(*On se propose maintenant de définir un type mot. On commence par se donner un 
+type lettre pour représenter l'alphabet fini.*)
+
+Inductive lettre : Type :=
+| a : lettre
+| b : lettre
+| c : lettre
+| d : lettre.
+
+(*Définir le type mot de manière inductive avec epsilon pour désigner le mot vide et 
+en utilisant un constructeur cons.*)
+
+
+(*Définir une fonction tete qui renvoie la première lettre si le mot est non vide
+et a (par défaut) sinon.*)
+
+
+(*Définir une fonction suff qui renvoie le mot privé de sa première lettre si le mot
+ est non vide et epsilon sinon.*)
+
+
+(*Écrire un lemme gettete affirmant que la tete de cons x u est x, puis le prouver.*)
+
+
+(*Écrire un lemme getsuff affirmant que u = suff (cons x u), puis le prouver.*)
+
+
+(*Montrer le lemme suivant.*)
+Lemma recomp :
+  forall (x:lettre) (u:mot), cons x u = cons (tete(cons x u)) (suff(cons x u)).
+Proof.
+
+Qed.
+
+(*Définir la concaténation conc sur les mots.*)
+
+
+(*Montrer au moyen d'un lemme conc_nil_l que la concaténation à gauche est 
+idempotente : u = conc epsilon u.*)
+
+
+(*Montrer au moyen d'un lemme conc_nil_r que la concaténation à droite est 
+idempotente.*)
+
+
+(*Montrer au moyen d'un lemme conc_assoc que la concaténation est associative.*)
+
+
+(*Définir une fonction long calculant la longueur d'un mot.*)
+
+
+(*Montrer au moyen d'un lemme long_conc que la longueur de la concaténation est la 
+somme des longueurs.*)
+
+
+(*Définir une fonction puiss calculant la puissance d'un mot : puiss n u = u^n.*)
+
+
+(*Montrer un théorème long_puiss affirmant que la longueur de u^n est n fois la 
+longueur de u.*)
+
+
+(*Montrer le lemme long_0 affirmant que si un mot est de longueur 0, c'est epsilon.*)
+
+
+(*Montrer le lemme egal affirmant que si x=y et u=v alors cons x u = cons y v.*)
+
+
+(*Montrer le lemme decomp, réciproque du résultat précédent.*)
+
+
+(*Pour la lettre a, on définit le mot suivant :*)
+Definition mot_a : mot := cons a epsilon.
+
+(*Montrer le lemme lettre_mot affirmant que construire un mot commençant par la lettre
+ a suivie de u revient à concaténer mot_a avec u.*)
+
+
+(*Le lemme suivant est fourni et sera utile dans la suite.*)
+Lemma plus_1 :
+  forall n:nat, S n = n+1.
+Proof.
+  intros. induction n0. trivial. simpl. rewrite IHn0. trivial.
+Qed.
+
+(*Montrer la proposition suivante au moyen d'une preuve par induction.*)
+Proposition exo :
+  forall u : mot, (conc mot_a u = conc u mot_a) -> exists n : nat, u = puiss n mot_a.
+Proof.
+ 
+Qed.
