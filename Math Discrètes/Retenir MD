@@ -7,3 +7,7 @@ mettre en commentaire dans coq :
 dans une liste : l 
 
 l' = élément suivant dans l 
+
+Fixpoint = 
+
+Lemma =  
