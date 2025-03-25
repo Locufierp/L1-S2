@@ -8,6 +8,11 @@ dans une liste : l
 
 l' = élément suivant dans l 
 
-Fixpoint = 
 
-Lemma =  
+Mots clés dans COQ 
+
+Fixpoint = anonce une fonction 
+
+Lemma =  annonc eune propriété 
+
+Const = représente un constructeur qui commence une liste à une suite défini 
