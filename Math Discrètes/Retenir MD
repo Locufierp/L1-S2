@@ -16,3 +16,10 @@ Fixpoint = anonce une fonction
 Lemma =  annonc eune propriété 
 
 Const = représente un constructeur qui commence une liste à une suite défini 
+const = fonctionne sur une définition 
+
+apply : applique une fonction sur hypothèse
+
+reflexivity : si des deux cotés égalité complete 
+
+trivial : ensemble de vérification sur une égalité
